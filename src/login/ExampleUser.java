@@ -5,8 +5,10 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class ExampleUser implements SearchGroup, WindowObject {
-
-
+    public static void main(String[] args) {
+        ExampleUser user = new ExampleUser();
+        user.getUI().setVisible(true);
+    }
     public JFrame getUI(){
         JFrame jFrame = InterfaceTool.createInterface("Some Title", 540, 700);
         InterfaceTool.addUserInterface(jFrame,null, null,null);

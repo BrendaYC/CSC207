@@ -6,10 +6,6 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class InterfaceTool {
-    public static void main(String[] args) {
-        ExampleUser user = new ExampleUser();
-        user.getUI().setVisible(true);
-    }
     static JFrame createInterface(String title, int width, int height){
         // create interface with desired setting
         JFrame newInterface = new JFrame(title);
