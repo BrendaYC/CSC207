@@ -4,14 +4,14 @@ import javax.swing.*;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-public class ExampleUser implements SearchGroup {
+public class ExampleUser implements SearchGroup, WindowObject {
 
 
-    public void showUI(){
-        JFrame jFrame = Interface.createInterface("Some Title", 540, 700);
-        Interface.addUserInterface(jFrame,null, null,null);
-        Interface.addSearchInterface(jFrame,this, false);
-        jFrame.setVisible(true);
+    public JFrame getUI(){
+        JFrame jFrame = InterfaceTool.createInterface("Some Title", 540, 700);
+        InterfaceTool.addUserInterface(jFrame,null, null,null);
+        InterfaceTool.addSearchInterface(jFrame,this, false);
+        return jFrame;
     }
 
     @Override
